@@ -12,12 +12,14 @@
 
 你的浏览器需要安装特定扩展，用于管理和运行用户脚本：
 
-* Chrome 用户： [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 * Firefox 用户： [Greasemonkey](https://addons.mozilla.org/zh-CN/firefox/addon/greasemonkey/)
+* ~~Chrome 用户： [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)~~
+
+（抱歉，暂未测试 Chrome 浏览器。）
 
 ## 安装
 
-1. 点击 [此链接](https://rawgit.com/UserScript/weibo-keep-v5/master/dist/weibo-keep-v5.user.js) 开始安装。
+1. 点击 [此链接](https://rawgit.com/UserScript/Weibo-Keep-V5/master/dist/weibo-keep-v5.user.js) 开始安装。
 2. 如果浏览器正确安装了上述扩展，会提示安装。确认即可。
 3. 此后登录新浪微博网页版，此脚本会自动工作，无需任何额外操作。
 
