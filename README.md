@@ -1,6 +1,6 @@
 # Weibo-Keep-V5
 
-这是一个用户脚本。她的主要功能是在你浏览新浪微博网页版时，尽可能恢复 V5 界面，你懂的。
+这是一个用户脚本。她的功能是在你浏览新浪微博网页版时，尽可能恢复 V5 界面，你懂的。
 
 ## 原理
 
@@ -13,9 +13,7 @@
 你的浏览器需要安装特定扩展，用于管理和运行用户脚本：
 
 * Firefox 用户： [Greasemonkey](https://addons.mozilla.org/zh-CN/firefox/addon/greasemonkey/)
-* ~~Chrome 用户： [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)~~
-
-（抱歉，暂未测试 Chrome 浏览器。）
+* ~~Chrome 用户： [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)~~ （抱歉，暂未测试 Chrome 浏览器。）
 
 ## 安装
 
