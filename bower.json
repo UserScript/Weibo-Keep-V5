@@ -1,0 +1,32 @@
+{
+  "name": "weibo-keep-v5",
+  "version": "0.1.0",
+  "homepage": "https://github.com/UserScript/weibo-keep-v5",
+  "authors": [
+    "cssmagic"
+  ],
+  "description": "User script to keep Sina Weibo staying at V5.",
+  "main": "dist/weibo-keep-v5.user.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "weibo",
+    "v5"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "**.sh",
+    "**.min.js",
+    "package.json",
+    "node_modules",
+    "bower_components",
+    "test",
+    "demo"
+  ],
+  "dependencies": {
+    "tiny.js": "*"
+  },
+  "devDependencies": {}
+}
