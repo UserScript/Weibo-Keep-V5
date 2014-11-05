@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name            Weibo-Keep-V5
 // @version         0.1.2
+// @author          cssmagic
 // @namespace       https://github.com/UserScript
 // @homepage        https://github.com/UserScript/Weibo-Keep-V5
 // @description     To keep Sina Weibo at V5.
