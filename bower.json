@@ -5,11 +5,8 @@
   "authors": [
     "cssmagic"
   ],
-  "description": "User script to keep Sina Weibo staying at V5.",
+  "description": "User script to keep Sina Weibo at V5.",
   "main": "dist/weibo-keep-v5.user.js",
-  "moduleType": [
-    "globals"
-  ],
   "keywords": [
     "weibo",
     "v5"
