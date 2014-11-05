@@ -8,7 +8,6 @@
 // @updateURL       https://rawgit.com/UserScript/Weibo-Keep-V5/master/src/meta.js
 // @icon            http://weibo.com/favicon.ico
 // @grant           unsafeWindow
-// @run-at          document-start
 // @noframes
 // @include         http://weibo.com/*
 // @include         http://www.weibo.com/*

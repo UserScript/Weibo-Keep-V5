@@ -32,8 +32,6 @@ void function () {
 		url = url || req
 		return _isV6URL(url) ? url.split(paramV6).join(paramV5) : url
 	}
-	//group: 'http://weibo.com/mygroups?gid=7509&wvr=6&leftnav=1'
-	//comment: 'http://weibo.com/comment/inbox?topnav=1&wvr=5&f=1'
 	function _getPageType(url) {
 		url = url || req
 		var type = ''
@@ -86,11 +84,6 @@ void function () {
 	function _getWeiboConfig() {
 		return (unsafeWindow || window).$CONFIG
 	}
-	//$CONFIG['islogin'] ='1';
-	//$CONFIG['skin'] ='skin002';
-	//$CONFIG['uid'] = '1645021302';
-	//$CONFIG['nick'] = 'XXXXX';
-	//$CONFIG['domain'] = 'cssmagic';
 	function _isDebugMode() {
 		var config = _getWeiboConfig()
 		var result = false
@@ -101,15 +94,6 @@ void function () {
 		}
 		return result
 	}
-	//$CONFIG['pageid'] = 'myfollow';
-	//$CONFIG['jsPath'] = 'http://js.t.sinajs.cn/t5/';
-	//$CONFIG['cssPath'] = 'http://img.t.sinajs.cn/t5/';
-	//$CONFIG['imgPath'] = 'http://img.t.sinajs.cn/t5/';
-	//
-	//$CONFIG['pageid']='v6_content_home';
-	//$CONFIG['jsPath']='http://js.t.sinajs.cn/t6/';
-	//$CONFIG['cssPath']='http://img.t.sinajs.cn/t6/';
-	//$CONFIG['imgPath']='http://img.t.sinajs.cn/t6/';
 	function _isV6Page() {
 		var config = _getWeiboConfig()
 		var result = false
@@ -176,11 +160,9 @@ void function () {
 	//init
 	logInit()
 	restoreCookie()
-	$.on(window, 'DOMContentLoaded', function () {
-		logPageInfo()
-		if (_isV6Page()) {
-			bind()
-		}
-	})
+	logPageInfo()
+	if (_isV6Page()) {
+		bind()
+	}
 
 }()
