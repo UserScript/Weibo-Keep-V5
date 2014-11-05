@@ -5,6 +5,7 @@
 // @description     To keep Sina Weibo staying on V5.
 // @description:zh  让新浪微博保持在 V5 界面。
 // @downloadURL     https://rawgit.com/UserScript/Weibo-Keep-V5/master/dist/weibo-keep-v5.user.js
+// @updateURL       https://rawgit.com/UserScript/Weibo-Keep-V5/master/src/meta.js
 // @icon            http://weibo.com/favicon.ico
 // @grant           unsafeWindow
 // @run-at          document-start
