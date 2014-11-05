@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name            Weibo-Keep-V5
-// @version         0.1.0
+// @version         0.1.2
+// @author          cssmagic
 // @namespace       https://github.com/UserScript
+// @homepage        https://github.com/UserScript/Weibo-Keep-V5
 // @description     To keep Sina Weibo at V5.
 // @description:zh  让新浪微博保持在 V5 界面。
 // @downloadURL     https://rawgit.com/UserScript/Weibo-Keep-V5/master/dist/weibo-keep-v5.user.js
@@ -152,20 +154,10 @@ void function (root) {
 void function () {
 	'use strict'
 
-	//url
-	var host = location.host
-	var path = location.pathname
-	var query = location.search
-	var req = path + query
-	var paramV6 = 'wvr=6'
-	var paramV5 = 'wvr=5'
-
 	//cookie
 	var cookieKey = 'wvr'
 	var cookieKeyV6 = 'wvr6'
 	var cookieDomain = '.weibo.com'
-
-	//util
 	function _setCookie(key, value, path, days, domain) {
 		var str = key + '=' + encodeURIComponent(value) + ';'
 		if (path) str += 'path=' + path + ';'
@@ -175,6 +167,11 @@ void function () {
 	}
 
 	//url
+	var path = location.pathname
+	var query = location.search
+	var req = path + query
+	var paramV6 = 'wvr=6'
+	var paramV5 = 'wvr=5'
 	function _isV6URL(url) {
 		url = url || req
 		return $.str.include(url, paramV6)
@@ -233,17 +230,11 @@ void function () {
 
 	//weibo config
 	function _getWeiboConfig() {
-		return (unsafeWindow || window).$CONFIG
+		return unsafeWindow.$CONFIG || {}
 	}
 	function _isDebugMode() {
 		var config = _getWeiboConfig()
-		var result = false
-		if (config.uid === '1645021302') {
-			result = true
-		} else if (config.domain === 'cssmagic') {
-			result = true
-		}
-		return result
+		return config.uid === '1645021302' || config.domain === 'cssmagic'
 	}
 	function _isV6Page() {
 		var config = _getWeiboConfig()
